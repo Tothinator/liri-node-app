@@ -143,7 +143,7 @@ function concertSearch(band) {
 
             separator();
 
-            if (events.length !== 0) {
+            if (events.length !== 0 && events !== '\n{warn=Not found}\n') {
                 console.log("List of events for " + band + "!\n")
 
                 for (var i = 0; i < events.length; i++) {
